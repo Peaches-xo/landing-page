@@ -1,0 +1,208 @@
+:root {
+    --heroText: #F9FAF8; /*48px extra-bold 900 "this website is awesome" 
+                             24px for header logo text */
+    --lightGrey: #E5E7EB; /*18px, hero secondary text, header link text
+                            quote section BG colour */
+    --buttonColor: #3882F6; /* also CTA background colour */
+    --Navy: #1F2937; /* hero & footer background colour,
+                            36px extra-bold 900, info header text 
+                            36px light italic 300, quote text*/
+    --boxGrey: #6d747d;
+}
+
+* {
+    padding:0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 195px 0px 215px;
+    background-color: var(--Navy);
+}
+
+header > p{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--heroText);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+li {
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--lightGrey);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+a:hover{
+    color:#6d747d;
+}
+
+/*main section */
+.main {
+    display:flex;
+    justify-content: space-between;
+    padding: 100px 215px;
+    color: var(--lightGrey);
+    background-color: var(--Navy);
+}
+.main-left{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 1 0;
+    font-size: 18px;
+   font-weight: 300;
+    margin-right: 40px;
+    letter-spacing: 0.5px;
+    gap: 5px; /*relates to children h1, p, button */
+}
+h1 {
+    color: var(--heroText);
+    font-weight: bold;
+    font-size: 48px;
+}
+.main-btn {
+    background-color: var(--buttonColor);
+    outline: solid 2px var(--buttonColor);
+    color: var(--lightGrey);
+    border: none;
+    font-size: 18px;
+    font-weight: 600; 
+    padding: 5px 30px;
+    border-radius: 8px;
+    margin-top:10px;
+    cursor: pointer;
+}
+
+.main-btn:hover{
+    outline: solid 2px white;
+}
+.div-img{
+    background-color: #6d747d;
+    width: 100px;
+    flex: 1 1 auto; 
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Info section */
+.info{
+    color:var(--Navy);
+    text-align: center;
+    padding: 40px;
+}
+h2{
+ font-size: 36px;
+ font-weight: bold;
+}
+
+.square{
+    width: 150px;
+    height: 150px;
+    border: solid 4px var(--buttonColor);
+    border-radius: 20px;
+    padding: 10px;
+}
+.info-wrapper{
+    display:flex;
+    width: 60%;
+    margin: 30px auto;
+    color:var(--boxGrey);
+    font-size: 18px;
+    justify-content: center;
+    
+}
+.squareText{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 5px;
+}
+
+/* quote section */
+.quote{
+    font-size:36px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--Navy);
+    background-color: var(--lightGrey);
+   padding: 50px;
+}
+
+.quote-div{
+    width: 60%;
+    margin: 30px auto;
+    text-align: justify;
+}
+
+.thor-p{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: right;
+}
+
+/* CTA section */
+.cta-div{
+    background-color: var(--buttonColor);
+    color: var(--lightGrey);
+    font-size: 18px;
+    height: 80px;
+    margin: 80px auto;   
+    border-radius: 10px;
+    padding: 40px 120px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.cta-div p:first-child{
+    color:var(--heroText);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cta-btn{
+    border: solid 2px white;
+    padding: 10px;
+    background-color: var(--buttonColor);
+    color: var(--lightGrey);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 30px;
+    align-self: flex-end;
+}
+
+.cta-btn:hover{
+    border: solid 2px var(--lightGrey) ;
+}
+/* footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--Navy);
+    color: var(--lightGrey);
+    align-items: center; 
+    padding: 20px 40px;
+}
